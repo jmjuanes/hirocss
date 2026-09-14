@@ -1,0 +1,11 @@
+## Node files and folders
+node_modules
+package-lock.json
+yarn.lock
+
+## Output files
+www
+chiro.css
+
+## Other files
+.DS_Store
