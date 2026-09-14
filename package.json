@@ -1,0 +1,49 @@
+{
+    "name": "chiro",
+    "version": "0.0.0",
+    "description": "Tiny and functional CSS toolkit",
+    "author": {
+        "name": "Josemi Juanes",
+        "email": "hello@josemi.xyz"
+    },
+    "license": "MIT",
+    "homepage": "https://josemi.xyz/chiro",
+    "repository": "https://github.com/jmjuanes/chiro",
+    "bugs": "https://github.com/jmjuanes/chiro/issues",
+    "type": "module",
+    "main": "chiro.css",
+    "style": "chiro.css",
+    "scripts": {
+    },
+    "keywords": [
+        "css",
+        "css-toolkit",
+        "functional-css",
+        "css-utilities",
+        "utilities",
+        "css-classes",
+        "components"
+    ],
+    "files": [
+        "README.md",
+        "LICENSE",
+        "chiro.css",
+        "reset.css",
+        "base.css",
+        "variables.css",
+        "package.json"
+    ],
+    "devDependencies": {
+        "autoprefixer": "^10.4.21",
+        "csso": "^5.0.5"
+    },
+    "browserslist": [
+        "last 10 Chrome versions",
+        "last 4 Firefox versions",
+        "last 3 Safari versions",
+        "not Safari 12",
+        "last 4 Edge versions",
+        "not Edge <= 18",
+        "Firefox ESR"
+    ]
+}
