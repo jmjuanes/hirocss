@@ -1,5 +1,5 @@
 {
-    "name": "chiro",
+    "name": "hiro",
     "version": "0.0.0",
     "description": "Tiny and functional CSS toolkit",
     "author": {
@@ -7,13 +7,14 @@
         "email": "hello@josemi.xyz"
     },
     "license": "MIT",
-    "homepage": "https://josemi.xyz/chiro",
-    "repository": "https://github.com/jmjuanes/chiro",
-    "bugs": "https://github.com/jmjuanes/chiro/issues",
+    "homepage": "https://josemi.xyz/hiro",
+    "repository": "https://github.com/jmjuanes/hiro",
+    "bugs": "https://github.com/jmjuanes/hiro/issues",
     "type": "module",
-    "main": "chiro.css",
-    "style": "chiro.css",
+    "main": "hiro.css",
+    "style": "hiro.css",
     "scripts": {
+        "build": "lightningcss --minify --bundle --targets \"> 1%\" index.css -o hiro.css"
     },
     "keywords": [
         "css",
@@ -27,15 +28,16 @@
     "files": [
         "README.md",
         "LICENSE",
-        "chiro.css",
+        "hiro.css",
         "reset.css",
         "base.css",
         "variables.css",
+        "components.css",
+        "utilities.css",
         "package.json"
     ],
     "devDependencies": {
-        "autoprefixer": "^10.4.21",
-        "csso": "^5.0.5"
+        "lightningcss": "^1.33.0"
     },
     "browserslist": [
         "> 1%",
@@ -45,5 +47,8 @@
         "not IE 11",
         "not op_mini all",
         "not dead"
-    ]
+    ],
+    "dependencies": {
+        "lightningcss-cli": "^1.33.0"
+    }
 }
