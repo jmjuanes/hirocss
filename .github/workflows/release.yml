@@ -1,0 +1,40 @@
+## This workflow is limited only when a new tag is created
+on:
+  push:
+    tags: ["*"]
+
+## Set permissions to the github token
+## https://github.com/softprops/action-gh-release#permissions 
+permissions:
+  contents: write
+
+jobs:
+  release:
+    if: ${{ github.repository == 'jmjuanes/hirocss' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: latest
+      - run: yarn install
+      - run: yarn run build
+      - uses: softprops/action-gh-release@v3
+        with:
+          files: hiro.css
+          generate_release_notes: true
+  
+  publish:
+    if: ${{ github.repository == 'jmjuanes/hirocss' }}
+    runs-on: ubuntu-latest
+    env:
+      NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: latest
+          registry-url: 'https://registry.npmjs.org'
+      - run: yarn install
+      - run: yarn run build
+      - run: yarn publish --access public
