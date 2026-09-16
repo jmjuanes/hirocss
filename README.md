@@ -43,8 +43,8 @@ Every color and size resolves from a small set of CSS custom properties. Overrid
 
 ## Philosophy
 
-- **Utility-first.** Compose UI from small, single-purpose classes. Component classes (`.btn`, `.card`...) may be added later, but only once a real, repeated pattern justifies extracting one - never predefined upfront.
-- **Minimal by default.** Ships the smallest useful set of tokens and utilities; new ones are added only when a real use case needs them.
+- **Utility-first.** Compose UI from small, single-purpose classes. Component classes (`.btn`, `.card`...) may be added later.
+- **Minimal by default.** Ships the smallest useful set of tokens and utilities.
 - **No lock-in.** Plain CSS custom properties, no build step, no preprocessor required to consume it.
 
 ## License
