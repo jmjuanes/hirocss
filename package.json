@@ -1,6 +1,6 @@
 {
-    "name": "hiro",
-    "version": "0.0.0",
+    "name": "hirocss",
+    "version": "0.0.1",
     "description": "Tiny and functional CSS toolkit",
     "author": {
         "name": "Josemi Juanes",
@@ -8,8 +8,8 @@
     },
     "license": "MIT",
     "homepage": "https://josemi.xyz/hiro",
-    "repository": "https://github.com/jmjuanes/hiro",
-    "bugs": "https://github.com/jmjuanes/hiro/issues",
+    "repository": "https://github.com/jmjuanes/hirocss",
+    "bugs": "https://github.com/jmjuanes/hirocss/issues",
     "type": "module",
     "main": "hiro.css",
     "style": "hiro.css",
